@@ -1,2 +1,2 @@
 # meenuravi.github.io
-portfolio
+https://meenuravi18.github.io/meenuravi/
