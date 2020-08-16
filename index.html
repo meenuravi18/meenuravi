@@ -18,6 +18,7 @@
         
         <!--Link CSS-->
         <link href="css/index.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
         
     </head>
     <!-- END HEAD -->
@@ -52,9 +53,17 @@
     <div id="about">
         <h1 class="headings">About Me</h1>
         <div id="aboutSection" class="aboutClass">  
-            <img src="img/aboutmePhoto.jpg"  id="myPhoto" >
-            <p class="aboutText"> <br> My name is Meenu Ravi. I graduated from Rensselaer Polytechnic Institute with a BS in Computer Science. I am currently a grad student at the University of Chicago, pursuing a masters in Data Science and Statistics. My goal is to do research in the applications of machine learning and NLP in healthcare. Some interesting classes I am currently taking include Machine Learning and Predictive Analytics, Time Series Analysis and Forecasting, and Data Mining Principles. I love seeing the interdisciplinary applications of computer science and data science and spreading my knowledge, whether it's computer science or academic advice! </p>
-        
+            <div data uk-grid class="uk-grid">
+            <div class="uk-width-1-4@m uk-first-column">
+                <img class="uk-align-center uk-border-rounded" src="img/aboutmePhoto.jpg"  width="200" height="200">
+            </div>
+            
+            <div class="uk-width-3-4@m about-text">
+                <p class="uk-dropcap">
+                    My name is Meenu Ravi. I graduated from Rensselaer Polytechnic Institute with a BS in Computer Science. I am currently a grad student at the University of Chicago, pursuing a masters in Data Science and Statistics. My goal is to do research in the applications of machine learning and NLP in healthcare. Some interesting classes I am currently taking include Machine Learning and Predictive Analytics, Time Series Analysis and Forecasting, and Data Mining Principles. I love seeing the interdisciplinary applications of computer science and data science and spreading my knowledge, whether it's computer science or academic advice!  
+                </p>
+            </div>       
+        </div>
         </div>
     </div>
 
@@ -111,7 +120,7 @@
 
     </div>
     
-    <div id="Skills">
+    <!-- <div id="Skills">
         <h1 class="headings">Skills</h1>
         <div class="chart" id="graph" data-percent="95" skill="Python"></div>
         <div class="chart2" id="graph2" data-percent="90" skill="JavaScript"></div>
@@ -121,7 +130,7 @@
         <div class="chart6" id="graph6" data-percent="30" skill="MATLAB"></div>
         <div class="chart7" id="graph7" data-percent="20" skill="R"></div>
         
-    </div>
+    </div> -->
     <div id="contact">
         <h1 class="headings">Contact Me</h1>
         <div id="contactme">
