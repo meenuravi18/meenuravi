@@ -1,7 +1,5 @@
 window.onload = function(){
-    var refButton = document.getElementById("myPhoto");
-    document.getElementById("aboutSection").style.height=refButton.offsetHeight+"px";
-
+    
     var radius=0;
     var ctxRet;
     var ctx;
