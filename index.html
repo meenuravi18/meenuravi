@@ -22,9 +22,49 @@
         
     </head>
     <!-- END HEAD -->
-    
+    <div class="uk-position-relative">
+        <img src="img/introbanner.jpg" width=100%>
+        <div class="overlay"></div>
+    </div>
+    <div class="uk-position-top" >
+        <nav id="navBar" class="uk-navbar uk-navbar-container uk-text-bold" data-uk-navbar>
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-toggle" href="#" data-k-toggle="target: #offcanvas-nav">
+                    <span data-uk-toggle-icon class="uk=navbar-toggle-icon uk-icon">
+                        <svg xmins="http://w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" ratio="1">
+                        <rect y="9" width="20" height="20"></rect>
+                        <rect y="3" width="20" height="20"></rect>
+                        <rect y="15" width="20" height="20"></rect>
+                    </svg> 
+                    </span>
+                </a>
+            </div>
+            <div class="uk-navbar-center" id="menuBar">
+                <ul class="uk-navbar-nav" id="menu">
+                    <li id="menuItem"><a id="aItem" href="#"><span class="glyphicon glyphicon-home" style="background-color: transparent; color: white;"></span> Home</a></li>
+                    <li id="menuItem"><a id="aItem" href="#about"> <span class="glyphicon glyphicon-user" style="background-color: transparent; color: white;"> </span> About</a></li>
+                    <li id="menuItem"><a id="aItem" href="#experience"><span class="glyphicon glyphicon-list-alt" style="background-color: transparent; color: white;"></span> Experience and Projects</a></li>
+                    <li id="menuItem"><a id="aItem" href="#Skills"><span class="glyphicon glyphicon-briefcase" style="background-color: transparent; color: white;"></span> Skills</a></li>
+                    <li id="menuItem"><a id="aItem" href="#contact"><span class="glyphicon glyphicon-earphone" style="background-color: transparent; color: white;"></span> Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="uk-position-center">
+        <h1 id="title" class="uk-text-center uk-text-bold "> Meenu Ravi <br>
+            
+                <button class="linkedInButton" onclick=" window.open('https://www.linkedin.com/in/meenu-ravi-97215a161/','_blank')" type="button"><img src="img/linkedin.png" width=100% height=100% ></button>
+                <button class="instagramButton" onclick=" window.open('https://www.instagram.com/meenuravi18/?hl=en','_blank')" type="button"><img src="img/instagram.png" width=100% height=100% ></button>
+                <button class="facebookButton" onclick=" window.open('https://www.facebook.com/profile.php?id=100010466118353','_blank')" type="button"><img src="img/facebook.png" width=100% height=100% ></button>
+                <button class="githubButton" onclick=" window.open('https://www.github.com/meenuravi18','_blank')" type="button"><img src="img/github.png" width=100% height=100% ></button>
+               
+           
+        </h1>
+        
+        
+    </div>
    
-    <div class="banner-image">
+    <!-- <div class="banner-image">
         <div class="myheadshot">
             <img class="headshot" src="img/meenucenter.jpg">
         </div>
@@ -38,16 +78,8 @@
             <button class="githubButton" onclick=" window.open('https://www.github.com/meenuravi18','_blank')" type="button"><img src="img/github.png" width=100% height=100% ></button>
            
         </div>
-    </div>
-    <div id="homeBar">
-        <ul>
-            <li><a class="active" href="#homeBar"> <span class="glyphicon glyphicon-home" style="background-color: transparent; color: white;"></span> Home</a></li>
-            <li></span><a href="#about"> <span class="glyphicon glyphicon-user" style="background-color: transparent; color: white;"> </span> About</a></li>
-            <li><a href="#experience"><span class="glyphicon glyphicon-list-alt" style="background-color: transparent; color: white;"></span> Experience and Projects</a></li>
-            <li><a href="#Skills"><span class="glyphicon glyphicon-briefcase" style="background-color: transparent; color: white;"></span> Skills</a></li>
-            <li><a href="#contact"><span class="glyphicon glyphicon-earphone" style="background-color: transparent; color: white;"></span> Contact</a></li>
-          </ul>
-    </div>
+    </div> -->
+    
     
     
     <div id="about">
@@ -55,7 +87,7 @@
         <div id="aboutSection" class="aboutClass">  
             <div data uk-grid class="uk-grid">
             <div class="uk-width-1-4@m uk-first-column">
-                <img class="uk-align-center " src="img/aboutmePhoto.jpg"  width="200" height="200">
+                <img class="uk-align-center"  id="aboutPhoto" src="img/aboutmePhoto.jpg"  width="200" height="200">
             </div>
             
             <div class="uk-width-3-4@m about-text uk-grid-margin uk-first-column">
