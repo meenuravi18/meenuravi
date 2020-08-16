@@ -1,9 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <!-- BEGIN HEAD -->
     <head>
-        Meenu Ravi
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <!-- Google font import-->
+
+        <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+        
+        <!--Link CSS-->
+        <link href="css/index.css" rel="stylesheet">
+        
     </head>
-    <body>
-        Welcome
-    </body>
+    <!-- END HEAD -->
+    
+   
+    <div class="banner-image">
+        <div class="myheadshot">
+            <img class="headshot" src="img/meenucenter.jpg">
+        </div>
+       
+            <h1 class="nameText">Meenu Ravi</h1>
+        
+        <div class="connectButtons">
+            <button class="linkedInButton" onclick=" window.open('https://www.linkedin.com/in/meenu-ravi-97215a161/','_blank')" type="button"><img src="img/linkedin.png" width=100% height=100% ></button>
+            <button class="instagramButton" onclick=" window.open('https://www.instagram.com/meenuravi18/?hl=en','_blank')" type="button"><img src="img/instagram.png" width=100% height=100% ></button>
+            <button class="facebookButton" onclick=" window.open('https://www.facebook.com/profile.php?id=100010466118353','_blank')" type="button"><img src="img/facebook.png" width=100% height=100% ></button>
+            <button class="githubButton" onclick=" window.open('https://www.github.com/meenuravi18','_blank')" type="button"><img src="img/github.png" width=100% height=100% ></button>
+           
+        </div>
+    </div>
+    <div id="homeBar">
+        <ul>
+            <li><a class="active" href="#homeBar"> <span class="glyphicon glyphicon-home" style="background-color: transparent; color: white;"></span> Home</a></li>
+            <li></span><a href="#about"> <span class="glyphicon glyphicon-user" style="background-color: transparent; color: white;"> </span> About</a></li>
+            <li><a href="#experience"><span class="glyphicon glyphicon-list-alt" style="background-color: transparent; color: white;"></span> Experience and Projects</a></li>
+            <li><a href="#Skills"><span class="glyphicon glyphicon-briefcase" style="background-color: transparent; color: white;"></span> Skills</a></li>
+            <li><a href="#contact"><span class="glyphicon glyphicon-earphone" style="background-color: transparent; color: white;"></span> Contact</a></li>
+          </ul>
+    </div>
+    
+    
+    <div id="about">
+        <h1 class="headings">About Me</h1>
+        <div id="aboutSection" class="aboutClass">  
+            <img src="img/aboutmePhoto.jpg"  id="myPhoto" >
+            <p class="aboutText"> <br> My name is Meenu Ravi. I graduated from Rensselaer Polytechnic Institute with a BS in Computer Science. I am currently a grad student at the University of Chicago, pursuing a masters in Data Science and Statistics. My goal is to do research in the applications of machine learning and NLP in healthcare. Some interesting classes I am currently taking include Machine Learning and Predictive Analytics, Time Series Analysis and Forecasting, and Data Mining Principles. I love seeing the interdisciplinary applications of computer science and data science and spreading my knowledge, whether it's computer science or academic advice! </p>
+        
+        </div>
+    </div>
+
+    <div id="experience">
+        <h1 class="headings">Experience and Projects</h1>
+        <ul id="grid">
+            <li>
+                <a class="cell">
+                    <img class="cell-img" src="img/mssmCoverImage.jpg">
+                    <span class="cell-overlay"></span>
+                    <span class="cell-text">My work at the Pinto Lab of Mount Sinai Health Center included analyzing clinical data of 463 epileptic and autistic patients to examine correlation among various epileptic and autistic phenotypes and concordancy between variables and data sources. I performed QC analysis, regression testing, and correlation mapping to see how data coverage could be improved. <br> <em>Languages and tools Used: Python, R, MatplotLib, numpy, pandas </em>
+                    <br>
+                    <button class="viewPaper" onclick=" window.open('','_blank')" type="button"> <span class="glyphicon glyphicon-eye-open" style="background-color: transparent; color: white;"></span> View Project</button>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a class="cell">
+                    <img class="cell-img" src="img/twcCover.png">
+                    <span class="cell-overlay"></span>
+                    <span class="cell-text">In my research at Tetherless World Constellation, I designed and implemented an efficient user-friendly Semantic Data Dictionary Editor (SDD) and Data Dictionary
+                        Editor in Human-Aware Data Acquisition framework for the Human Health Exposure Analysis Resource (HHEAR) project. I looked at how normalized data can be fed into personalized health knowledge graphs to link user data and concepts from ontologies <br> <em> Languages and Tools Used: JavaScript, Java, HTML/CSS, and Scala</em>
+                        <br>
+                        <button class="viewPaper" onclick=" window.open('text/phkg.pdf','_blank')" type="button"> <span class="glyphicon glyphicon-eye-open" style="background-color: transparent; color: white;"></span> View Presentation</button>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a class="cell">
+                    <img class="cell-img" src="img/honeyBeeCover.jpg">
+                    <span class="cell-overlay"></span>
+                    <span class="cell-text">I examined the effectiveness of the many “Save the Bees” campaigns and how it correlates with, if at all, the population of bees in the United States, the use of bee-killing pesticides, and the sale of honey. This is a group project, I worked on in the Data Science class at RPI
+                        <br> Languages and Tools Used: Python, R, Tableau
+                        <br>
+                        <button class="viewPaper" onclick=" window.open('https://www.github.com/ITWSDataScience/HoneyBeeColoniesInUSA2019','_blank')" type="button"> <span class="glyphicon glyphicon-eye-open" style="background-color: transparent; color: white;"></span> View Project</button>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a class="cell">
+                    <img class="cell-img" src="img/kidneyCover.jpg">
+                    <span class="cell-overlay"></span>
+                    <span class="cell-text">After studying the various algorithms involved in kidney exchanges, I decided to implement a scoring algorithm that takes into consideration psychological status and the idea: greater the number of factors met, the higher the chance that the transplanted kidney will have better/ longer functionality.
+                        Every patient-donor match should be associated with a score or probability that the transplanted kidney will be successful.
+                        <br>
+                        <em>Languages and Tools used: Python, Networkx, MatplotLib</em>
+                        <br>
+                        <button class="viewPaper" onclick=" window.open('','_blank')" type="button"> <span class="glyphicon glyphicon-eye-open" style="background-color: transparent; color: white;"></span> View Project</button>
+                        </span>
+                </a>
+            </li>
+            
+        </ul>
+
+    </div>
+    
+    <div id="Skills">
+        <h1 class="headings">Skills</h1>
+        <div class="chart" id="graph" data-percent="95" skill="Python"></div>
+        <div class="chart2" id="graph2" data-percent="90" skill="JavaScript"></div>
+        <div class="chart3" id="graph3" data-percent="85" skill="HTML/CSS"></div>
+        <div class="chart4" id="graph4" data-percent="85" skill="C/C++"></div>
+        <div class="chart5" id="graph5" data-percent="70" skill="Java"></div>
+        <div class="chart6" id="graph6" data-percent="30" skill="MATLAB"></div>
+        <div class="chart7" id="graph7" data-percent="20" skill="R"></div>
+        
+    </div>
+    <div id="contact">
+        <h1 class="headings">Contact Me</h1>
+        <div id="contactme">
+             <img src="img/emailIcon.png" width=2% height=2%> meenuravi18@gmail.com
+        </div>
+    </div>
+    
 </html>
