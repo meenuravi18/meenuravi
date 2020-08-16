@@ -134,11 +134,11 @@ ul {
     width: 100%;
     background-color: #D5CED7;
 }
-.aboutText{
-    width:100%;
+#aboutText{
+    
     font-family: 'Quicksand', sans-serif;
-    font-size: medium;
-    padding-right: 8px;
+    font-size: large;
+    padding-right: 25px;
     padding-left: 8px;
 }
 #myPhoto{
