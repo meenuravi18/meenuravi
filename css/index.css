@@ -3,28 +3,14 @@
     color:black;
     font-family: 'Lemonada', cursive;
 }
-.myheadshot{
-    padding:5px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-}
-.headshot{
-    border-radius:50%;
-    width:10%;
-    height:10%;
-    border: 5px solid #555;
-    top:10%;
-    padding:5px;
-    opacity: 1.0;
-}
+
 .connectButtons{
     top:20%;
     align-items:center;
     display:flex;
-    position: relative;
+    
     justify-content:center;
-    padding:0px;
+    padding:8px;
     
 }
 .linkedInButton{
@@ -44,8 +30,8 @@
     border-radius: 50%;
     border-color: transparent;
     background-color: transparent;
-    width: 50px;
-    height:50px;
+    width: 48px;
+    height:48px;
     margin: 0;
     top: 50%;
     
@@ -93,7 +79,15 @@
     color:transparent;
 } */
 
-
+#aboutHeading{
+    font-family:'Lemonada', cursive;
+    color:black;
+}
+#SubHeading{
+    font-family:'Lemonada', cursive;
+    color:black;
+    font-size-adjust: inherit;
+}
   
 .aboutClass{
     width: 100%;
@@ -105,6 +99,8 @@
     font-size: large;
     padding-right: 25px;
     padding-left: 25px;
+    padding-bottom: 25px;
+    padding-top:25px;
 }
 #aboutPhoto{
     padding:15px;
@@ -118,30 +114,20 @@
 }
 #grid {
     max-width:90%;
-    margin:0 auto; /*center aligned*/
+    margin:0 auto; 
     padding:0;
-    font-size:0; /* Remember to change it back to normal font size if have captions */
+    font-size:0; 
     list-style:none;
     background-color:#3A3030;
 }
-#grid li {
-    display: inline-block;
-    *display:inline;/*for IE6 - IE7*/
-    width:25%;
-    vertical-align:middle;
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
-}
-        
-/* The wrapper for each item */
+
 .cell {
     display:block;
     position: relative;
     overflow:hidden;
+    width: 100%;
 }
-        
-/* If have the image layer */
+
 .cell-img {
     display:block;
     width: 100%;
@@ -154,8 +140,7 @@
 #grid li:hover .cell-img {
     transform:scale(1.05);
 }
-        
-/* If have the overlay layer */
+
 .cell-overlay {
     position: absolute;
     display:block;
@@ -206,19 +191,21 @@
     background-color: rgb(129, 98, 129);
 }
 
+
+
 .chart {
     position:relative;
     display: inline-block;
-    margin:5px;
+    /* margin:5px;
     width:20%; 
-    height:20%;
+    height:20%; */
 }
 .chart2 {
     position:relative;
     display:inline-block;
-    margin:5px;
+    /* margin:5px;
     width:20%; 
-    height:20%;
+    height:20%; */
 }
 .chart3 {
     position:relative;
@@ -256,12 +243,10 @@
     height:20%;
 }
 
-#contact{
-    background-color:#D5CED7 ;
-}
+
 #contactme{
     align-items:center;
-    display:flex;
+    display:inline-block;
     position: relative;
     justify-content:center;
     padding:20px;
@@ -269,4 +254,23 @@
     font-weight:bold;
     color:black;
     font-size: medium;
+    width: 100%;
+    background-color: rgb(165, 158, 158) ;
+}
+#email{
+    background-color: rgb(165, 158, 158) ;
+    font-family: 'Quicksand', sans-serif;
+    font-weight:bold;
+    color:black;
+    font-size: medium;
+    align-items:center;
+    display:flex;
+    position: relative;
+    justify-content:center;
+}
+#sequence{
+    color:black;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: large;
 }
