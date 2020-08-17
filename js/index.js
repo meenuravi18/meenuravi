@@ -1,5 +1,7 @@
 window.onload = function(){
-    
+    // var refButton = document.getElementById("myPhoto");
+    // document.getElementById("aboutSection").style.height=refButton.offsetHeight+"px";
+
     var radius=0;
     var ctxRet;
     var ctx;
@@ -23,7 +25,7 @@ window.onload = function(){
         var span = document.createElement('span');
         
     
-        span.textContent = skill+"\n"+options.percent + '%';
+        span.textContent = skill+":\n"+options.percent;
             
         if (typeof(G_vmlCanvasManager) !== 'undefined') {
             G_vmlCanvasManager.initElement(canvas);
@@ -68,18 +70,35 @@ window.onload = function(){
 
 
 
-
-    var ancestor = document.getElementById('Skills'),
-    descendents = ancestor.getElementsByTagName('div');
-    for( var i=0;i<descendents.length;i++){
-        console.log(descendents[i].getAttribute( 'id' ))
-        idName=descendents[i].getAttribute( 'id' )
-        skill=descendents[i].getAttribute( 'skill' )
-        options=skillsChart(idName,skill)
-        drawCircle('grey', options.lineWidth, 100 / 100);
-        drawCircle('#3A3030', options.lineWidth, options.percent / 100);
+    var ids=["Skills","Skills2","Skills3","Skills4","Skills5","Skills6","Skills7"]
+    for(var j=0;j<ids.length;j++){
+        var ancestor=document.getElementById(ids[j])
+        descendents = ancestor.getElementsByTagName('div');
+        for( var i=0;i<descendents.length;i++){
+            console.log(descendents[i].getAttribute( 'id' ))
+            idName=descendents[i].getAttribute( 'id' )
+            skill=descendents[i].getAttribute( 'skill' )
+            options=skillsChart(idName,skill)
+            drawCircle('grey', options.lineWidth, 100 / 100);
+            drawCircle('#3A3030', options.lineWidth, options.percent / 100);
+        }
     }
-    
- };
+    var headingsList = ['Computer Science', 'Data Science', 'NLP', 'Machine Learning'];
 
+    textRotate(0);
+    function textRotate(i) {
+
+        if (headingsList.length > i) {
+            setTimeout(function() {
+                document.getElementById("sequence").innerHTML = headingsList[i];
+                textRotate(++i);
+            }, 2000); 
+
+        } else if (headingsList.length == i) { 
+            textRotate(0);
+        }
+
+    }
+ };
+ 
  
