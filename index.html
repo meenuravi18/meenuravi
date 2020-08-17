@@ -16,24 +16,21 @@
         <script type="text/javascript" src="js/index.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <!-- UIkit CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/css/uikit.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/css/uikit.min.css" />
 
-<!-- UIkit JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit-icons.min.js"></script>
+        <!-- UIkit JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit-icons.min.js"></script>
         
         <!--Link CSS-->
         <link href="css/index.css" rel="stylesheet">
-        <!-- <link href="css/style.css" rel="stylesheet">
-        <link href="css/uikit.min.css" rel="stylesheet">
-        <link href="css/uikit-rtl.css" rel="stylesheet">
-        <link href="css/uikit-rtl.min.css" rel="stylesheet"> -->
+
         
         
     </head>
     <!-- END HEAD -->
     <div class="uk-position-relative">
-        <img src="img/introbanner.jpg" width=100%>
+        <img src="img/introbanner.jpg" style="opacity: 0.7;" width=100%>
         <div class="overlay"></div>
     
     <div class="uk-position-top" style="background-color: transparent;" >
@@ -54,11 +51,8 @@
         </nav>
     </div>
     <div class="uk-position-center">
-        <h1 id="title" class="uk-text-center uk-text-bold " style="word-wrap: break-word;"> Meenu Ravi <br>
-            
-
-           
-        </h1>
+        <h1 id="title" class="uk-text-center uk-text-bold " style="word-wrap: break-word;"> Meenu Ravi <br> </h1>
+        <div id="sequence"  class="uk-text-center uk-text-bold "></div> 
     </div>
 </div>
     <div id="offcanvas-nav" data uk-offcanvas >
@@ -78,12 +72,14 @@
  
     
     
-    <div id="about">
-        <h1 class="headings">About Me</h1>
+    <!-- <div id="about"> -->
+    <div class="uk-section uk-section-muted" id="skills">
+        <div class="uk-container">
+        <h3 id="aboutHeading" class="uk-heading-line uk-text-center"><span> About Me</span></h3>
         <div id="aboutSection" class="aboutClass">  
             <div data uk-grid class="uk-grid">
             <div class="uk-width-1-4@m uk-first-column">
-                <img class="uk-align-center"  id="aboutPhoto" src="img/aboutmePhoto.jpg"  width="200" height="200">
+                <img class="uk-align-center"  id="aboutPhoto" src="img/meenucenter.jpg"  width="200" height="200">
             </div>
             
             <div class="uk-width-3-4@m about-text uk-grid-margin uk-first-column">
@@ -93,76 +89,121 @@
             </div>       
         </div>
         </div>
+        </div>
     </div>
-
-    <div id="experience">
-        <h1 class="headings">Experience and Projects</h1>
-        <ul id="grid">
-            <li>
-                <a class="cell">
-                    <img class="cell-img" src="img/mssmCoverImage.jpg">
-                    <span class="cell-overlay"></span>
-                    <span class="cell-text">My work at the Pinto Lab of Mount Sinai Health Center included analyzing clinical data of 463 epileptic and autistic patients to examine correlation among various epileptic and autistic phenotypes and concordancy between variables and data sources. I performed QC analysis, regression testing, and correlation mapping to see how data coverage could be improved. <br> <em>Languages and tools Used: Python, R, MatplotLib, numpy, pandas </em>
-                    <br>
-                    <button class="viewPaper" onclick=" window.open('','_blank')" type="button"> <span class="glyphicon glyphicon-eye-open" style="background-color: transparent; color: white;"></span> View Project</button>
-                    </span>
-                </a>
-            </li>
-            <li>
+    <div class="uk-section uk-section-default" id="experience">
+        <div class="uk-container">
+           <h3 id="aboutHeading" class="uk-heading-line uk-text-center"><span>Experience</span></h3>
+           <h4 id="SubHeading" class="uk-text-center"><span> Projects and Internships</span></h4>
+           <div class="uk-grid-match uk-child-width-1-5@m uk-child-width-1-3@s uk-child-width-1-2" data-uk-grid>
+            <ul id="grid">
+                <li>
+                    <a class="cell">
+                        <img class="cell-img" src="img/mssmCoverImage.jpg">
+                        <span class="cell-overlay"></span>
+                        <span class="cell-text">At the Pinto Lab of Mount Sinai Health Center, I performed QC Analysis, regression testing and correlation mapping to analyze clinical data of 463 epileptic and autistic patients and examine correlation among phenotypes and concordancy between data sources. <br> * Python, R, MatplotLib, numpy, pandas 
+                        <br>
+                        <button class="viewPaper" onclick=" window.open('','_blank')" type="button"> <span class="glyphicon glyphicon-eye-open" style="background-color: transparent; color: white;"></span> View Project</button>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            
+            <ul id="grid">
+                <li>
                 <a class="cell">
                     <img class="cell-img" src="img/twcCover.png">
                     <span class="cell-overlay"></span>
-                    <span class="cell-text">In my research at Tetherless World Constellation, I designed and implemented an efficient user-friendly Semantic Data Dictionary Editor (SDD) and Data Dictionary
-                        Editor in Human-Aware Data Acquisition framework for the Human Health Exposure Analysis Resource (HHEAR) project. I looked at how normalized data can be fed into personalized health knowledge graphs to link user data and concepts from ontologies <br> <em> Languages and Tools Used: JavaScript, Java, HTML/CSS, and Scala</em>
+                    <span class="cell-text">In my research at Tetherless World Constellation, I designed/implemented efficient user-friendly SDD and DD
+                        in Human-Aware Data Acquisition framework for the (HHEAR) project. Saw how to normalize data fed into personalized health knowledge graphs to link user data and ontology concepts <br>  * JavaScript, Java, HTML/CSS, and Scala
                         <br>
                         <button class="viewPaper" onclick=" window.open('text/phkg.pdf','_blank')" type="button"> <span class="glyphicon glyphicon-eye-open" style="background-color: transparent; color: white;"></span> View Presentation</button>
                     </span>
                 </a>
-            </li>
-            <li>
-                <a class="cell">
-                    <img class="cell-img" src="img/honeyBeeCover.jpg">
-                    <span class="cell-overlay"></span>
-                    <span class="cell-text">I examined the effectiveness of the many “Save the Bees” campaigns and how it correlates with, if at all, the population of bees in the United States, the use of bee-killing pesticides, and the sale of honey. This is a group project, I worked on in the Data Science class at RPI
-                        <br> Languages and Tools Used: Python, R, Tableau
-                        <br>
-                        <button class="viewPaper" onclick=" window.open('https://www.github.com/ITWSDataScience/HoneyBeeColoniesInUSA2019','_blank')" type="button"> <span class="glyphicon glyphicon-eye-open" style="background-color: transparent; color: white;"></span> View Project</button>
-                    </span>
-                </a>
-            </li>
-            <li>
-                <a class="cell">
-                    <img class="cell-img" src="img/kidneyCover.jpg">
-                    <span class="cell-overlay"></span>
-                    <span class="cell-text">After studying the various algorithms involved in kidney exchanges, I decided to implement a scoring algorithm that takes into consideration psychological status and the idea: greater the number of factors met, the higher the chance that the transplanted kidney will have better/ longer functionality.
-                        Every patient-donor match should be associated with a score or probability that the transplanted kidney will be successful.
-                        <br>
-                        <em>Languages and Tools used: Python, Networkx, MatplotLib</em>
-                        <br>
-                        <button class="viewPaper" onclick=" window.open('','_blank')" type="button"> <span class="glyphicon glyphicon-eye-open" style="background-color: transparent; color: white;"></span> View Project</button>
+                </li>
+            </ul>
+            <ul id="grid">
+                <li>
+                    <a class="cell">
+                        <img class="cell-img" src="img/honeyBeeCover.jpg">
+                        <span class="cell-overlay"></span>
+                        <span class="cell-text">I examined the effectiveness of the many “Save the Bees” campaigns and how it correlates with, if at all, the population of bees in the United States, the use of bee-killing pesticides, and the sale of honey. This is a group project, I worked on in the Data Science class at RPI
+                            <br> * Python, R, Tableau
+                            <br>
+                            <button class="viewPaper" onclick=" window.open('https://www.github.com/ITWSDataScience/HoneyBeeColoniesInUSA2019','_blank')" type="button"> <span class="glyphicon glyphicon-eye-open" style="background-color: transparent; color: white;"></span> View Project</button>
                         </span>
-                </a>
-            </li>
-            
-        </ul>
+                    </a>
+                </li>
+            </ul>
+            <ul id="grid">
+                <li>
+                    <a class="cell">
+                        <img class="cell-img" src="img/kidneyCover.jpg">
+                        <span class="cell-overlay"></span>
+                        <span class="cell-text">After studying the various algorithms involved in kidney exchanges, I implemented a scoring algorithm that takes into consideration psychological status and the idea: greater the number of factors met, the higher the chance that the transplanted kidney will have better/ longer functionality.
+                            <br>
+                            * Python, Networkx, MatplotLib
+                            <br>
+                            <button class="viewPaper" onclick=" window.open('','_blank')" type="button"> <span class="glyphicon glyphicon-eye-open" style="background-color: transparent; color: white;"></span> View Project</button>
+                            </span>
+                    </a>
+                </li>
+            </ul>
+                
+           </div>
+           </div>
+        </div>
 
-    </div>
+        <div class="uk-section uk-section-muted" id="skills">
+            <div class="uk-container">
+               <h3 id="aboutHeading" class="uk-heading-line uk-text-center"><span>Skills</span></h3>
+               <h4 id="SubHeading" class="uk-text-center"><span>Programming</span></h4>
+               <div class="uk-grid-match uk-child-width-1-5@m uk-child-width-1-3@s uk-child-width-1-2" data-uk-grid>
+                    <div id="Skills">
+                        <div class="chart" id="graph" data-percent="95" skill="Python"></div>
+                    </div>
+                    <div id="Skills2">
+                        <div class="chart2" id="graph2" data-percent="90" skill="JavaScript"></div>
+                    </div>
+                    <div id="Skills3">
+                        <div class="chart3" id="graph3" data-percent="85" skill="HTML/CSS"></div>
+                    </div>
+                    <div id="Skills4">
+                        <div class="chart4" id="graph4" data-percent="85" skill="C/C++"></div>
+                    </div>
+                    <div id="Skills5">
+                        <div class="chart5" id="graph5" data-percent="70" skill="Java"></div>
+                    </div>
+                    <div id="Skills6">
+                        <div class="chart6" id="graph6" data-percent="30" skill="MATLAB"></div>
+                    </div>
+                    <div id="Skills7">
+                        <div class="chart7" id="graph7" data-percent="20" skill="R"></div>
+                    </div>
+                   
+               </div>
+               
+            </div>
+         </div>
     
-    <!-- <div id="Skills">
-        <h1 class="headings">Skills</h1>
-        <div class="chart" id="graph" data-percent="95" skill="Python"></div>
-        <div class="chart2" id="graph2" data-percent="90" skill="JavaScript"></div>
-        <div class="chart3" id="graph3" data-percent="85" skill="HTML/CSS"></div>
-        <div class="chart4" id="graph4" data-percent="85" skill="C/C++"></div>
-        <div class="chart5" id="graph5" data-percent="70" skill="Java"></div>
-        <div class="chart6" id="graph6" data-percent="30" skill="MATLAB"></div>
-        <div class="chart7" id="graph7" data-percent="20" skill="R"></div>
+    
+
+    <div class="uk-section uk-section-default" id="contact">
+        <div class="uk-container">
+            <h3 id="aboutHeading" class="uk-heading-line uk-text-center"><span>Contact Me</span></h3>
+            
+            <div id="contactme">
+                <div id="email">
+                <img src="img/emailIcon.png" width=2% height=2%> meenuravi18@gmail.com
+                </div>
+                <div class="connectButtons">
+                    <button class="linkedInButton" onclick=" window.open('https://www.linkedin.com/in/meenu-ravi-97215a161/','_blank')" type="button"><img src="img/linkedin.png" width=100% height=100% ></button>
+                    <button class="instagramButton" onclick=" window.open('https://www.instagram.com/meenuravi18/?hl=en','_blank')" type="button"><img src="img/instagram.png" width=100% height=100% ></button>
+                    <button class="facebookButton" onclick=" window.open('https://www.facebook.com/profile.php?id=100010466118353','_blank')" type="button"><img src="img/facebook.png" width=100% height=100% ></button>
+                    <button class="githubButton" onclick=" window.open('https://www.github.com/meenuravi18','_blank')" type="button"><img src="img/github.png" width=100% height=100% ></button>
         
-    </div> -->
-    <div id="contact">
-        <h1 class="headings">Contact Me</h1>
-        <div id="contactme">
-             <img src="img/emailIcon.png" width=2% height=2%> meenuravi18@gmail.com
+                </div>
+            </div>
         </div>
     </div>
     
