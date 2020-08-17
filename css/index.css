@@ -1,37 +1,13 @@
-body, html {
-    height: 100%;
-}
-
-/* The hero image */
-.banner-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image:  url("../img/introbanner.jpg");
-
-  /* Set a specific height */
-  height: 50%;
-  opacity: 0.8;
-  /* Position and center the image */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
 
 #title{
-    font-size: 60px;
     color:black;
     font-family: 'Lemonada', cursive;
-    
-    
-  
 }
 .myheadshot{
     padding:5px;
     display:flex;
     align-items:center;
     justify-content:center;
-    
-    
 }
 .headshot{
     border-radius:50%;
@@ -97,28 +73,10 @@ body, html {
     
     /* transform: translateY(-20%); */
 }
-#navBar{
-    background-color: rgb(165, 158, 158);
-    opacity: 0.7;
-}
-#menuBar{
-    background-color: rgb(165, 158, 158);
-    
-}
-#menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 6px 12px;
-    overflow: hidden;
-    background-color: rgb(165, 158, 158);
-  }
-  /*
-  li {
-    float: left;
-  }
-  */
+
+
 #menuItem a {
-    display: inline;
+    
     color: black;
     text-align: center;
     padding: 6px 12px;
@@ -127,12 +85,13 @@ body, html {
     font-size: small;
   }
   
-   #aItem:hover {
-
-    color:yellow;
+#aItem:hover {
+    color:rgb(170, 177, 107);
     text-decoration: none;
-  } 
-
+} 
+/* #bars{
+    color:transparent;
+} */
 
 
   
@@ -145,7 +104,7 @@ body, html {
     font-family: 'Quicksand', sans-serif;
     font-size: large;
     padding-right: 25px;
-    padding-left: 8px;
+    padding-left: 25px;
 }
 #aboutPhoto{
     padding:15px;
