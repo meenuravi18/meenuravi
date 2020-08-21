@@ -1,84 +1,54 @@
 
-#title{
-    color:black;
-    font-family: 'Lemonada', cursive;
-}
-
-.connectButtons{
-    top:20%;
-    align-items:center;
-    display:flex;
-    
-    justify-content:center;
-    padding:8px;
-    
-}
-.linkedInButton{
-    border-radius: 50%;
-    border-color: transparent;
-    background-color: transparent;
-    width: 50px;
-    height:50px;
-    margin: 0;
-    top: 50%;
-    
-    cursor: pointer;
-    /* transform: translateY(-20%); */
-}
-
-.instagramButton{
-    border-radius: 50%;
-    border-color: transparent;
-    background-color: transparent;
-    width: 48px;
-    height:48px;
-    margin: 0;
-    top: 50%;
-    
-    /* transform: translateY(-20%); */
-}
-.facebookButton{
-    border-radius: 50%;
-    border-color: transparent;
-    background-color: transparent;
-    width: 50px;
-    height:50px;
-    margin: 0;
-    top: 50%;
-    
-    /* transform: translateY(-20%); */
-}
-.githubButton{
-    border-radius: 50%;
-    border-color: transparent;
-    background-color: transparent;
-    width: 50px;
-    height:50px;
-    margin: 0;
-    top: 50%;
-    
-    /* transform: translateY(-20%); */
-}
-
-
+/*Navigation Bar*/
 #menuItem a {
-    
     color: black;
     text-align: center;
     padding: 6px 12px;
     text-decoration: none;
     font-family: 'Quicksand', sans-serif;
     font-size: small;
-  }
+}
   
 #aItem:hover {
     color:rgb(170, 177, 107);
     text-decoration: none;
 } 
-/* #bars{
-    color:transparent;
-} */
 
+
+/*Banner*/
+h3.typewriter {
+    border-right: solid 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Lemonada', cursive;
+    letter-spacing: 1.5px;
+    animation: animated-text 2s steps(28, end) 1s 1 normal both,
+    animated-cursor 600ms steps(28, end) infinite;
+}
+  
+@keyframes animated-text {
+    from { width: 0; }
+    to { width: 430px; }
+}
+
+@media screen and (max-width: 500px) {
+    @keyframes animated-text {
+        from { width: 0; }
+        to { width: 430px; }
+    }
+}
+
+@keyframes animated-cursor{
+    from { border-right-color: var(--primary-color); }
+    to  {border-right-color: transparent; }
+}
+ 
+#title{
+    color:black;
+    font-family: 'Lemonada', cursive;
+}
+
+/*About Section*/
 #aboutHeading{
     font-family:'Lemonada', cursive;
     color:black;
@@ -94,7 +64,6 @@
     background-color: #D5CED7;
 }
 #aboutText{
-    
     font-family: 'Quicksand', sans-serif;
     font-size: large;
     padding-right: 25px;
@@ -112,138 +81,136 @@
     font-size: x-large;
     
 }
-#grid {
-    max-width:90%;
-    margin:0 auto; 
-    padding:0;
-    font-size:0; 
-    list-style:none;
-    background-color:#3A3030;
-}
 
-.cell {
-    display:block;
-    position: relative;
-    overflow:hidden;
-    width: 100%;
-}
-
-.cell-img {
-    display:block;
-    width: 100%;
-    height: auto;
-    border:none;
-    transform:scale(1);
-    transition:all 1s;
-}
-
-#grid li:hover .cell-img {
-    transform:scale(1.05);
-}
-
-.cell-overlay {
-    position: absolute;
-    display:block;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    background-color:rgb(165, 158, 158) ;
-    opacity:0;
-    filter:alpha(opacity=0);/*For IE6 - IE8*/
-    transition:all 0.6s;
-}
-#grid li:hover .cell-overlay {
-    opacity:0.8;
-}
-
-/* If have captions */
-.cell-text {
-    display:block;
-    padding:5px;
-    box-sizing:border-box;
-    position:absolute;
-    left:0;
-    top:0;
-    width:100%;
-    text-align:center;
-    font-size:14px;
-    font-family: 'Quicksand', sans-serif;
-    font-weight:bold;
+/*Experience*/
+.coverImg {
+    width: 95%;
+    border-color: #c2c2b0;
+    border-style: solid;
+    border-width: 1px;
+    max-width: 200px;
+}  
+.fancybox{
     color:black;
-    opacity:0;
-    transition:all .3s;
+    font-family: 'Quicksand', sans-serif;
 }
-#grid li:hover .cell-text {
-    transform:translateY(0px);
-    opacity:0.7;
+.fancybox2{
+    color:black;
+    font-family: 'Quicksand', sans-serif;
 }
-.viewPaper{
-    background-color: rgb(53, 41, 61);
-    
+.fancybox3{
+    color:black;
+    font-family: 'Quicksand', sans-serif;
+}
+.fancybox4{
+    color:black;
+    font-family: 'Quicksand', sans-serif;
+}
+.expDetails{
+    color:black;
+    font-family: 'Quicksand', sans-serif;
+}
+.expTd{
+    text-align: center; 
+    width: 25%;
+}
+.popup{
+    text-align: justify; 
+    width: 95%;
+}
+.detailImg{
+    border: 1px solid #c2c2b0; 
+    padding: 1;
+}
+.fancyDiv{
+    margin: auto;
+    width: 402px;
+}
+.expTable{
+    width: 95%; 
+    margin: auto;
+}
+.footnote{
+    font-size: 1.2em;
+    color:black;
+    font-family: 'Quicksand', sans-serif;
+}
+.caption{
+    text-align: center; 
+    font-size: 0.8em;
+    color:black;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Skills */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);;
+    background-color: transparent;
+}
+.grid-item {
+    background-color: transparent;
+    font-size: 30px;
+    text-align: center;
+}
+#skillButton{
+    border-radius: 50%;
     border-color: transparent;
-    font-family: 'Quicksand', sans-serif ;
-    color:white;
-    margin-top: 3px;
+    background-color: transparent;
+    padding:10px;
 }
-.viewPaper:hover {
-    background-color: rgb(129, 98, 129);
-}
-
-
-
-.chart {
-    position:relative;
-    display: inline-block;
-    /* margin:5px;
-    width:20%; 
-    height:20%; */
-}
-.chart2 {
-    position:relative;
-    display:inline-block;
-    /* margin:5px;
-    width:20%; 
-    height:20%; */
-}
-.chart3 {
-    position:relative;
-    display:inline-block;
-    margin:5px;
-    width:20%; 
-    height:20%;
-}
-.chart4 {
-    position:relative;
-    display:inline-block;
-    margin:5px;
-    width:20%; 
-    height:20%;
-}
-.chart5 {
-    position:relative;
-    display:inline-block;
-    margin:5px;
-    width:20%; 
-    height:20%;
-}
-.chart6 {
-    position:relative;
-    display:inline-block;
-    margin:5px;
-    width:20%; 
-    height:20%;
-}
-.chart7 {
-    position:relative;
-    display:inline-block;
-    margin:5px;
-    width:20%; 
-    height:20%;
+#skillButton:hover{
+    background: #D5CED7;
 }
 
+/*Contact*/
+.connectButtons{
+    top:20%;
+    align-items:center;
+    display:flex;
+    
+    justify-content:center;
+    padding:8px;
+    
+}
+.linkedInButton{
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: transparent;
+    width: 50px;
+    height:50px;
+    margin: 0;
+    top: 50%;
+    cursor: pointer;
+}
 
+.instagramButton{
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: transparent;
+    width: 48px;
+    height:48px;
+    margin: 0;
+    top: 50%;
+}
+.facebookButton{
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: transparent;
+    width: 50px;
+    height:50px;
+    margin: 0;
+    top: 50%;
+}
+.githubButton{
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: transparent;
+    width: 50px;
+    height:50px;
+    margin: 0;
+    top: 50%;
+}
 #contactme{
     align-items:center;
     display:inline-block;
