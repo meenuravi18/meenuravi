@@ -28,13 +28,13 @@ h3.typewriter {
   
 @keyframes animated-text {
     from { width: 0; }
-    to { width: 430px; }
+    to { width: 280px; }
 }
 
 @media screen and (max-width: 500px) {
     @keyframes animated-text {
         from { width: 0; }
-        to { width: 430px; }
+        to { width: 280px; }
     }
 }
 
