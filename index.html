@@ -6,60 +6,80 @@
       
         <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0 user-scalable=no" name="viewport"/>
         <!-- Google font import-->
-
         <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@400;500&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+        
+        <!-- JQuery import-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         
+        <!--Bootstrap Resources-->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://fancyapps.com/fancybox/source/jquery.fancybox.css?v=2.0.6" type="text/css" media="screen" />
         <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
         <!-- UIkit CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/css/uikit.min.css" />
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
         <!-- UIkit JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit-icons.min.js"></script>
-        
+   
         <!--Link CSS-->
         <link href="css/index.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+        <!--Link JS-->
+        <script type="text/javascript" src="js/index.js"></script>
         
-        
+        <!--fancybox resources-->
+        <script type="text/javascript" src="http://fancyapps.com/fancybox/source/jquery.fancybox.pack.js?v=2.0.6"></script>
+        <script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="http://fancyapps.com/fancybox/source/jquery.fancybox.pack.js?v=2.0.5"></script>
+        <link rel="stylesheet" type="text/css" href="http://fancyapps.com/fancybox/source/jquery.fancybox.css?v=2.0.5" media="screen" />
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="fancybox/source/jquery.fancybox.css?v=2.1.4" media="screen" />
+        <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.4"></script>
+
+
     </head>
     <!-- END HEAD -->
+
+    <!--Navigation Bar-->
+    <header class="header-area">
+        <div class="main-menu">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom: 0px">
+            <a class="navbar-brand" href=""> <span class="navbar-brand-style"><img src=img/logo.png> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="mr-auto"></div>
+                    <ul class="navbar-nav">
+                        <li id="menuItem"><a id="aItem" href="#"><span class="glyphicon glyphicon-home" style="background-color: transparent; color: black;"></span> Home</a></li>
+                        <li id="menuItem"><a id="aItem" href="#about"> <span class="glyphicon glyphicon-user" style="background-color: transparent; color: black;"> </span> About</a></li>
+                        <li id="menuItem"><a id="aItem" href="#experience"><span class="glyphicon glyphicon-list-alt" style="background-color: transparent; color: black;"></span> Experience and Projects</a></li>
+                        <li id="menuItem"><a id="aItem" href="#Skills"><span class="glyphicon glyphicon-briefcase" style="background-color: transparent; color: black;"></span> Skills</a></li>
+                        <li id="menuItem"><a id="aItem" href="#contact"><span class="glyphicon glyphicon-earphone" style="background-color: transparent; color: black;"></span> Contact</a></li>
+                    </ul>
+            </div>
+          </nav>
+        </div>
+    </header>
+    <!--Intro Banner-->
     <div class="uk-position-relative">
         <img src="img/introbanner.jpg" style="opacity: 0.7;" width=100%>
         <div class="overlay"></div>
-    
-    <div class="uk-position-top" style="background-color: transparent;" >
-        <nav  class="uk-navbar uk-navbar-container uk-text-bold" data-uk-navbar style="background-color: transparent;">
-            <div class="uk-navbar-left">
-                <a class="uk-navbar-toggle " href="#" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav" style="color:black"></a>
-            </div>
-            <div class="uk-navbar-center" >
-                <ul class="uk-navbar-nav uk-visible@s" >
-                    <li id="menuItem"><a id="aItem" href="#"><span class="glyphicon glyphicon-home" style="background-color: transparent; color: black;"></span> Home</a></li>
-                    <li id="menuItem"><a id="aItem" href="#about"> <span class="glyphicon glyphicon-user" style="background-color: transparent; color: black;"> </span> About</a></li>
-                    <li id="menuItem"><a id="aItem" href="#experience"><span class="glyphicon glyphicon-list-alt" style="background-color: transparent; color: black;"></span> Experience and Projects</a></li>
-                    <li id="menuItem"><a id="aItem" href="#Skills"><span class="glyphicon glyphicon-briefcase" style="background-color: transparent; color: black;"></span> Skills</a></li>
-                    <li id="menuItem"><a id="aItem" href="#contact"><span class="glyphicon glyphicon-earphone" style="background-color: transparent; color: black;"></span> Contact</a></li>
-                </ul>
+        <div class="uk-position-center">
+            <h3 class="title-text typewriter">Hello world, my name is</h3> 
+            <h1 id="title" class="uk-text-center uk-text-bold " style="word-wrap: break-word;"> Meenu Ravi <br> </h1>
+            <div id="sequence"  class="uk-text-center uk-text-bold "></div> 
+        </div>
+    </div>
 
-            </div>
-        </nav>
-    </div>
-    <div class="uk-position-center">
-        <h1 id="title" class="uk-text-center uk-text-bold " style="word-wrap: break-word;"> Meenu Ravi <br> </h1>
-        <div id="sequence"  class="uk-text-center uk-text-bold "></div> 
-    </div>
-</div>
+    <!--Small Screen Menu-->
     <div id="offcanvas-nav" data uk-offcanvas >
         <div class="uk-offcanvas-bar" style="background-color: #bab2bd;">
-            <button class="uk-offcanvas-close" type="button" data-uk-close>
-
-            </button>
+            <button class="uk-offcanvas-close" type="button" data-uk-close></button>
             <ul class="uk-nav">
                 <li id="menuItem"><a id="aItem" href="#"><span class="glyphicon glyphicon-home" style="background-color: transparent; color: black;"></span> Home</a></li>
                     <li id="menuItem"><a id="aItem" href="#about"> <span class="glyphicon glyphicon-user" style="background-color: transparent; color: black;"> </span> About</a></li>
@@ -71,137 +91,219 @@
     </div>
  
     
-    
-    <!-- <div id="about"> -->
-    <div class="uk-section uk-section-muted" id="skills">
-        <div class="uk-container">
-        <h3 id="aboutHeading" class="uk-heading-line uk-text-center"><span> About Me</span></h3>
-        <div id="aboutSection" class="aboutClass">  
-            <div data uk-grid class="uk-grid">
-            <div class="uk-width-1-4@m uk-first-column">
-                <img class="uk-align-center"  id="aboutPhoto" src="img/meenucenter.jpg"  width="200" height="200">
+    <!--About Section-->
+    <div id="about">
+        <div class="uk-section uk-section-muted" id="skills">
+            <div class="uk-container">
+            <h3 id="aboutHeading" class="uk-heading-line uk-text-center"><span> About Me</span></h3>
+            <div id="aboutSection" class="aboutClass">  
+                <div data uk-grid class="uk-grid">
+                <div class="uk-width-1-4@m uk-first-column">
+                    <img class="uk-align-center"  id="aboutPhoto" src="img/meenucenter.jpg"  width="200" height="200">
+                </div>
+                
+                <div class="uk-width-3-4@m about-text uk-grid-margin uk-first-column">
+                    <p class="uk-dropcap" id="aboutText">
+                        My name is Meenu Ravi. I graduated from Rensselaer Polytechnic Institute with a BS in Computer Science. I am currently a grad student at the University of Chicago, pursuing a masters in Data Science and Statistics. My goal is to do research in the applications of machine learning and NLP in healthcare. Some interesting classes I am currently taking include Machine Learning and Predictive Analytics, Time Series Analysis and Forecasting, and Data Mining Principles. I love seeing the interdisciplinary applications of computer science and data science and spreading my knowledge, whether it's computer science or academic advice!  
+                    </p>
+                </div>       
             </div>
-            
-            <div class="uk-width-3-4@m about-text uk-grid-margin uk-first-column">
-                <p class="uk-dropcap" id="aboutText">
-                    My name is Meenu Ravi. I graduated from Rensselaer Polytechnic Institute with a BS in Computer Science. I am currently a grad student at the University of Chicago, pursuing a masters in Data Science and Statistics. My goal is to do research in the applications of machine learning and NLP in healthcare. Some interesting classes I am currently taking include Machine Learning and Predictive Analytics, Time Series Analysis and Forecasting, and Data Mining Principles. I love seeing the interdisciplinary applications of computer science and data science and spreading my knowledge, whether it's computer science or academic advice!  
-                </p>
-            </div>       
+            </div>
+            </div>
         </div>
+    </div>
+
+
+
+    <!--Experience Section-->
+
+    <!-- MSSM project -->
+        
+    <div style="display: none;">
+        <div id="mssm-div" class="fancyDiv">
+        <img class="detailImg" src="img/coverageResults.png" />
+        <div class="caption" >
+            Results of Coverage Analysis of ASD-Epi data
+        </div>
+        
+        <div class="expDetails" >
+            At the Pinto Lab of Mount Sinai Health Center, I performed QC Analysis, regression testing and correlation mapping to analyze clinical data of 463 epileptic and autistic patients and examine correlation among phenotypes and concordancy between data sources. <br> Languages and Tools Used: Python, R, MatplotLib, numpy, pandas 
+
+        </div>
+        
+        <div class="footnote" >
+            <b>Resources</b>
+        </div>
+        
+         <div class="popup">
+            <ul class="resources">
+            <li class="expDetails">
+                <a href="https://github.com/codergirlx0x0/MSSM" target="_blank">View Github Page</a>
+            </ul>
         </div>
         </div>
     </div>
+    <!-- TWC project -->
+
+    <div style="display: none;">
+        <div id="twc-div" class="fancyDiv">
+        <img class="detailImg" src="img/sdd.png" />
+        <div class="caption" >
+            An example of Semantic Data Dictionary UI page
+        </div>
+        
+        <div class="expDetails" >
+            In my research at Tetherless World Constellation, I designed/implemented efficient user-friendly Semantic Data Dictionary (SDD) and Data Dictionary (DD)
+            in Human-Aware Data Acquisition framework for the Human Health Exposure Analysis Resource (HHEAR) project. Saw how to normalize data fed into personalized health knowledge graphs to link user data and ontology concepts <br>  Languages and Tools Used: JavaScript, Java, HTML/CSS, and Scala
+        </div>
+        
+        <div class="footnote" >
+            <b>Resources</b>
+        </div>
+        
+         <div class="popup">
+            <ul class="resources">
+            <li class="expDetails">
+                <a href="https://github.com/paulopinheiro1234/hadatac/wiki" target="_blank">View Github Page</a>
+            <li class="expDetails">
+                <a href="https://www.hadatac.org/" target="_blank">View HADatAc Framework</a>
+            <li class="expDetails">
+                <a href="text/phkg.pdf" target="_blank">View Presentation</a>
+            <li class="expDetails">
+                <a href="text/PHKGpaper.pdf" target="_blank">View Paper</a>
+            </ul>
+        </div>
+        </div>
+    </div>
+
+    <!-- bee project -->
+    <div style="display: none;">
+        <div id="honey-div" class="fancyDiv">
+        <img class="detailImg" src="img/honey.png" />
+        <div class="caption" >
+            Honey Prices 1998-2014 in United States Data Visualization
+        </div>
+        
+        <div class="expDetails" >
+            I examined the effectiveness of the many “Save the Bees” campaigns and how it correlates with, if at all, the population of bees in the United States, the use of bee-killing pesticides, and the sale of honey. This is a group project, I worked on in the Data Science class at RPI
+            <br> Languages and Tools Used: Python, R, Tableau
+        </div>
+        
+        <div class="footnote" >
+            <b>Resources</b>
+        </div>
+        
+         <div class="popup">
+            <ul class="resources">
+            <li class="expDetails">
+                <a href="https://www.github.com/ITWSDataScience/HoneyBeeColoniesInUSA2019" target="_blank"> View Github Page</a>
+            </ul>
+        </div>
+        </div>
+    </div>
+        <!-- kidney project -->
+
+    <div style="display: none;">
+        <div id="kidney-div" class="fancyDiv">
+        <img class="detailImg" src="img/kidneyMatching.png" />
+        <div class="caption" >
+            Visualization Result of performing one to one matching after scoring procedure
+        </div>
+        
+        <div class="expDetails" >
+            After studying the various algorithms involved in kidney exchanges, I implemented a scoring algorithm that takes into consideration psychological status and the idea: greater the number of factors met, the higher the chance that the transplanted kidney will have better/ longer functionality.
+            <br>
+            Languages and Tools used: Python, Networkx, MatplotLib
+        </div>
+        
+        <div class="footnote" >
+            <b>Resources</b>
+        </div>
+        
+         <div class="popup">
+            <ul class="resources">
+            <li class="expDetails">
+                <a href="text/kidney.pdf" target="_blank">View Paper</a>
+            </ul>
+        </div>
+        </div>
+    </div>
+    
+    <!--Experience Popup-->
     <div class="uk-section uk-section-default" id="experience">
         <div class="uk-container">
-           <h3 id="aboutHeading" class="uk-heading-line uk-text-center"><span>Experience</span></h3>
-           <h4 id="SubHeading" class="uk-text-center"><span> Projects and Internships</span></h4>
-           <div class="uk-grid-match uk-child-width-1-5@m uk-child-width-1-3@s uk-child-width-1-2" data-uk-grid>
-            <ul id="grid">
-                <li>
-                    <a class="cell">
-                        <img class="cell-img" src="img/mssmCoverImage.jpg">
-                        <span class="cell-overlay"></span>
-                        <span class="cell-text">At the Pinto Lab of Mount Sinai Health Center, I performed QC Analysis, regression testing and correlation mapping to analyze clinical data of 463 epileptic and autistic patients and examine correlation among phenotypes and concordancy between data sources. <br> * Python, R, MatplotLib, numpy, pandas 
-                        <br>
-                        <button class="viewPaper" onclick=" window.open('','_blank')" type="button"> <span class="glyphicon glyphicon-eye-open" style="background-color: transparent; color: white;"></span> View Project</button>
-                        </span>
-                    </a>
-                </li>
-            </ul>
-            
-            <ul id="grid">
-                <li>
-                <a class="cell">
-                    <img class="cell-img" src="img/twcCover.png">
-                    <span class="cell-overlay"></span>
-                    <span class="cell-text">In my research at Tetherless World Constellation, I designed/implemented efficient user-friendly SDD and DD
-                        in Human-Aware Data Acquisition framework for the (HHEAR) project. Saw how to normalize data fed into personalized health knowledge graphs to link user data and ontology concepts <br>  * JavaScript, Java, HTML/CSS, and Scala
-                        <br>
-                        <button class="viewPaper" onclick=" window.open('text/phkg.pdf','_blank')" type="button"> <span class="glyphicon glyphicon-eye-open" style="background-color: transparent; color: white;"></span> View Presentation</button>
-                    </span>
-                </a>
-                </li>
-            </ul>
-            <ul id="grid">
-                <li>
-                    <a class="cell">
-                        <img class="cell-img" src="img/honeyBeeCover.jpg">
-                        <span class="cell-overlay"></span>
-                        <span class="cell-text">I examined the effectiveness of the many “Save the Bees” campaigns and how it correlates with, if at all, the population of bees in the United States, the use of bee-killing pesticides, and the sale of honey. This is a group project, I worked on in the Data Science class at RPI
-                            <br> * Python, R, Tableau
-                            <br>
-                            <button class="viewPaper" onclick=" window.open('https://www.github.com/ITWSDataScience/HoneyBeeColoniesInUSA2019','_blank')" type="button"> <span class="glyphicon glyphicon-eye-open" style="background-color: transparent; color: white;"></span> View Project</button>
-                        </span>
-                    </a>
-                </li>
-            </ul>
-            <ul id="grid">
-                <li>
-                    <a class="cell">
-                        <img class="cell-img" src="img/kidneyCover.jpg">
-                        <span class="cell-overlay"></span>
-                        <span class="cell-text">After studying the various algorithms involved in kidney exchanges, I implemented a scoring algorithm that takes into consideration psychological status and the idea: greater the number of factors met, the higher the chance that the transplanted kidney will have better/ longer functionality.
-                            <br>
-                            * Python, Networkx, MatplotLib
-                            <br>
-                            <button class="viewPaper" onclick=" window.open('','_blank')" type="button"> <span class="glyphicon glyphicon-eye-open" style="background-color: transparent; color: white;"></span> View Project</button>
-                            </span>
-                    </a>
-                </li>
-            </ul>
-                
-           </div>
-           </div>
+            <h3 id="aboutHeading" class="uk-heading-line uk-text-center"><span>Experience</span></h3>
+            <h4 id="SubHeading" class="uk-text-center"><span> Projects and Internships</span></h4>
+        <div class="image-div">
+
+        <table class="expTable">
+        
+        <tr>
+        <td  class="expTd">
+        <a class="fancybox" rel="group" href="#mssm-div">
+            <img class="coverImg" src="img/mssmCoverImage.jpg" /><br>
+            ASD-Epi Data Analysis
+        </a>
+        </td>
+        
+        <td  class="expTd">
+        <a class="fancybox2" rel="group" href="#twc-div">
+        <img class="coverImg" src="img/twcCover.png" /><br>
+        HHEAR Project
+        </a>
+        </td>
+        
+        <td  class="expTd">
+        <a class="fancybox3" rel="group" href="#honey-div">
+        <img class="coverImg" src="img/honeyBeeCover.jpg" /><br>
+        Honey Bee - Prices Data Analysis
+        </a>
+        </td>
+        
+        <td  class="expTd">
+        <a class="fancybox4" rel="group" href="#kidney-div">
+        <img class="coverImg" src="img/kidneyCover.jpg" /><br>
+        Kidney Exchange Matching
+        </a>
+        </td>
+        </tr>
+        </table>
         </div>
-
-        <div class="uk-section uk-section-muted" id="skills">
-            <div class="uk-container">
-               <h3 id="aboutHeading" class="uk-heading-line uk-text-center"><span>Skills</span></h3>
-               <h4 id="SubHeading" class="uk-text-center"><span>Programming</span></h4>
-               <div class="uk-grid-match uk-child-width-1-5@m uk-child-width-1-3@s uk-child-width-1-2" data-uk-grid>
-                    <div id="Skills">
-                        <div class="chart" id="graph" data-percent="95" skill="Python"></div>
-                    </div>
-                    <div id="Skills2">
-                        <div class="chart2" id="graph2" data-percent="90" skill="JavaScript"></div>
-                    </div>
-                    <div id="Skills3">
-                        <div class="chart3" id="graph3" data-percent="85" skill="HTML/CSS"></div>
-                    </div>
-                    <div id="Skills4">
-                        <div class="chart4" id="graph4" data-percent="85" skill="C/C++"></div>
-                    </div>
-                    <div id="Skills5">
-                        <div class="chart5" id="graph5" data-percent="70" skill="Java"></div>
-                    </div>
-                    <div id="Skills6">
-                        <div class="chart6" id="graph6" data-percent="30" skill="MATLAB"></div>
-                    </div>
-                    <div id="Skills7">
-                        <div class="chart7" id="graph7" data-percent="20" skill="R"></div>
-                    </div>
-                   
-               </div>
-               
-            </div>
-         </div>
+    </div>
+    </div>
     
+    <!--Skills Section-->
+    <div class="uk-section uk-section-muted" id="Skills">
+        <div class="uk-container">
+        <h3 id="aboutHeading" class="uk-heading-line uk-text-center"><span>Skills</span></h3>
+        <h4 id="SubHeading" class="uk-text-center"><span>Programming</span></h4>
+        <div class="grid-container">
+            <div class="grid-item"><button id="skillButton"><img src=img/python.png width=100 height=100></button></div>
+            <div class="grid-item"><button id="skillButton"><img src=img/js.png width=100 height=100></button></div>
+            <div class="grid-item"><button id="skillButton"><img src=img/html.png width=100 height=100></button></div>  
+            <div class="grid-item"><button id="skillButton"><img src=img/css.png width=100 height=100></button></div>
+            <div class="grid-item"><button id="skillButton"><img src=img/c.png width=100 height=100></button></div>
+            <div class="grid-item"><button id="skillButton"><img src=img/cpp.png width=100 height=100></button></div>  
+            <div class="grid-item"><button id="skillButton"><img src=img/java.png width=100 height=100></button></div>
+            <div class="grid-item"><button id="skillButton"><img src=img/r.png width=100 height=100></button></div>
+            <div class="grid-item"><button id="skillButton"><img src=img/matlab.png width=100 height=100></button></div>  
+    </div>
+    </div>
+    </div>
     
-
+    <!--Contact Section-->
     <div class="uk-section uk-section-default" id="contact">
         <div class="uk-container">
             <h3 id="aboutHeading" class="uk-heading-line uk-text-center"><span>Contact Me</span></h3>
-            
             <div id="contactme">
                 <div id="email">
-                <img src="img/emailIcon.png" width=2% height=2%> meenuravi18@gmail.com
+                <img src="img/emailIcon.png" width=20 height=20> meenuravi18@gmail.com
                 </div>
                 <div class="connectButtons">
                     <button class="linkedInButton" onclick=" window.open('https://www.linkedin.com/in/meenu-ravi-97215a161/','_blank')" type="button"><img src="img/linkedin.png" width=100% height=100% ></button>
                     <button class="instagramButton" onclick=" window.open('https://www.instagram.com/meenuravi18/?hl=en','_blank')" type="button"><img src="img/instagram.png" width=100% height=100% ></button>
                     <button class="facebookButton" onclick=" window.open('https://www.facebook.com/profile.php?id=100010466118353','_blank')" type="button"><img src="img/facebook.png" width=100% height=100% ></button>
                     <button class="githubButton" onclick=" window.open('https://www.github.com/meenuravi18','_blank')" type="button"><img src="img/github.png" width=100% height=100% ></button>
-        
                 </div>
             </div>
         </div>
